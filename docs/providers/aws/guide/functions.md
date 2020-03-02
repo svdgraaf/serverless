@@ -38,7 +38,7 @@ functions:
     handler: handler.hello # required, handler set in AWS Lambda
     name: ${self:provider.stage}-lambdaName # optional, Deployed Lambda name
     description: Description of what the lambda function does # optional, Description to publish to AWS
-    runtime: python2.7 # optional overwrite, default is provider runtime
+    runtime: python3.8 # optional overwrite, default is provider runtime
     memorySize: 512 # optional, in MB, default is 1024
     timeout: 10 # optional, in seconds, default is 6
     provisionedConcurrency: 3 # optional, Count of provisioned lambda instances
